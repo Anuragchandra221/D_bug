@@ -1,0 +1,26 @@
+3.This is a C program to print the pattern
+output:
+1 
+2 4
+3 9 15
+4 16 28 40
+5 25 45 65 85
+
+The following code contains both logical and syntactical errors.
+Find it and fix it !
+
+#include<stdio.h>
+int main(){
+    int i,j,k = 0,n,l;
+    n=5;
+    for(i=1; i<n; i++){
+        printf("%d ", i);
+        k = (i-1)+i;
+        I = i+k;
+        for(j=o; j<i; j++){
+            printf("%d ", l);
+            l = l+k;
+        }
+        printf("/n");
+    }
+}

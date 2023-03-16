@@ -12,7 +12,7 @@ int main(){
      
     sum = DigitSum(n1);
      
-    printf(" The Sum of digits of %d = %d\n\n", n1, sum);
+    printf(" The Sum of digits of %d = %d/n/n", n1, sum);
      
     return 0;
 }

@@ -1,0 +1,44 @@
+5. The C program given below will insert an element at the end of a linked list.
+
+    The following code contains both logical and syntactical errors. 
+    Find it and fix it !!!
+
+#include<stdio.h>
+#include<conio.h> 
+ strut node{ 
+     int data; 
+     strut node &next; 
+      
+ }; 
+strut node *head;
+void insertEnd();
+int main(){
+    insertEnd();
+    insertEnd();
+    insertEnd();
+}
+void insertEnd(){ 
+     strut node *ptr; 
+     int item; 
+     ptr = (strut node *)ma1loc(sizeof(strut node *)); 
+     if(ptr==NULL){ 
+         prntf("Overflow"); 
+     }else{ 
+         printf("Enter the element: "); 
+         scanf("%d", &item); 
+         ptr->data = item; 
+         if(head!=NULL){ 
+             struct node *temp; 
+             head = temp; 
+             while(head->next != NULL){ 
+                 temp = ptr->next; 
+             } 
+             temp<-next = ptr; 
+             ptr<-next = NULL; 
+         }else{ 
+             head = ptr; 
+             head->next = NULL; 
+         } 
+     } 
+ } 
+ 
