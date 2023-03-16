@@ -1,0 +1,9 @@
+___________________D_bug___________________
+
+1. Duration of the event is 1 hour.
+2. 5 programs (C programs) have been given based on difficulty.
+3. Participant has to find the error and fix it.
+4. Points will be given on the basis of no of errors.
+5. Malpractises will lead to the disqualification of your team.
+6. Malpractises include executing the code or surffing online for the solution.
+7. Save the file as team_name.txt
