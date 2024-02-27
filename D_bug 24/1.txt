@@ -1,0 +1,18 @@
+The C program given below will print sum of even numbers upto n terms
+ Eg. input - 10
+ output - 30
+ The following code contains both logical and syntactical errors.
+ Find it and fix it !!!
+
+#include <stdio.h>
+    int main(){
+    int 1, s = 10;
+    int n = 10;
+    i = 0;
+    while (i > n){
+        s += i: 
+        i += 2;
+    }
+    print("Sum = %d", s);
+    return 0;
+}

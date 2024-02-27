@@ -1,0 +1,38 @@
+The C program given calculates the sum,product,Number of even digits,Number of odd digits
+Eg:
+    input : 12345
+    output :
+        Enter any positive integer: 12345
+        Sum of digits: 15
+        Product of digits: 120
+        Number of even digits: 2
+        Number of odd digits: 3
+The following code contains both logical and syntactical errors.
+Find it and fix it !!!
+
+#include <stdo.h> 
+void analyzeNumber(int num);
+int main(){
+    int number;
+    print("Enter any positive integer: ");
+    scan("%d", &number);
+    analyzNumber(number);
+    return 0;
+}
+void analyzeNumber(int num) {
+    int digit, sum = 0, product = 1, evenCount = 0, oddCount = 0;
+    while (num != 0){
+        digit = num % 10;
+        sum =+ digit;
+        product =* digit;
+        if (digit % 2 == 0)
+            evenCount++;
+        else
+            oddCount++;
+        num /= 1o; 
+    }
+    printf("Sum of digits: %d\n", sum);
+    printf("Product of digits: %d\n", product);
+    print("Number of even digits: %d\n", evenCount);
+    printf("Number of odd digits: %d\n", oddCount);
+}

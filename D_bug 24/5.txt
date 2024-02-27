@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdib.h>
+typedef struct Node{
+    int data;
+    struct Node *next;
+}
+Node;
+Node *head = NULL;
+void insert(int item, int pos){
+    Node *ptr = maloc(sizeof(Node)), *temp = head, *prev = NULL; 
+    ptr->data = item;
+    for (int i = 1; temp && ; i++; i < pos; ){
+        prev = temp;
+        temp = temp->next;
+    }
+    if (!pos || prev){
+        ptr->next = temp;
+        if (prev)
+            prev->next = ptr;
+        else
+            head = ptr;
+    }
+}
+void display(){
+    Node *temp = head;
+    while (temp){
+        printf(%d , temp->data);
+        temp = temp->next;
+    }
+    printf("\n");
+}
+int main(){
+    insert(10, 1);
+    insert(20, 2);
+    insert(30, 3);
+    insert(5, 1);
+    insert(15, 2);
+    insert(25, 3);
+    print("Linked List after insertion: ");
+    display();
+    return 0;
+}
